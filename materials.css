@@ -1,0 +1,183 @@
+:root {
+    /* .5rem = 8px 1rem=16px , 1.5rem=24px */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --smal-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /* MARGENES */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+    /*===== z index =====*/
+    --z-modal: 100;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: 0.7s;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 530px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 710px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 950px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1130px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1310px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: start !important;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center !important;
+}
+
+.flex-center-center {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.flex-align-center-beetween {
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.w-150 {
+    width: 150px;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.w-250 {
+    width: 250px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-ml-15 {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.mt-mb-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.m-15 {
+    margin: 15px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.tooltips {
+    position: relative;
+}
+
+.tooltips span {
+    position: absolute;
+    left: 0px;
+    top: -25px;
+    font-size: 14px;
+    width: 75px;
+    background: #757575;
+    color: #fff;
+    height: 25px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.tooltips:hover span {
+    opacity: 1;
+    transition: 0.7s;
+}
+
+@media screen and (max-width:968px) {
+     :root {
+        --big-font-size: 1.75rem;
+        --h1-font-size: 1.25rem;
+        --h2-font-size: 1rem;
+        --h3-font-size: .925rem;
+        --normal-font-size: .825rem;
+        --small-font-size: .725rem;
+        --smaller-font-size: .625rem;
+    }
+}
